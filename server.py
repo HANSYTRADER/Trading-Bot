@@ -7,6 +7,10 @@ app = Flask(__name__)
 
 pairs = ["EURUSD=X", "GBPUSD=X", "USDJPY=X", "AUDUSD=X", "EURJPY=X"]
 
+@app.route("/")
+def home():
+    return "Bot is running 🔥"
+
 def signal_logic(symbol):
     data = yf.download(symbol, interval="5m", period="1d")
 
