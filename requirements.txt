@@ -1,4 +1,4 @@
 flask
 yfinance
 pandas
-gunicorn
+gunicorn pip install -r pip install flask yfinance pandas gunicorn 
